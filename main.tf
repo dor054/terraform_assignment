@@ -69,7 +69,3 @@ data "template_file" "nginx_config" {
     "upstream_list" = "${join(",", docker_container.web.*.name)}"
   }
 }
-
-# output "test1" {
-#   value = data.template_file.nginx_config.rendered
-# }
