@@ -29,4 +29,19 @@ app.get('/', (req, res) => {
   `);
 });
 
+app.get('/healths', (req, res) => {
+  console.log('HEALTH CHECK ENDPOINT');
+  try {
+    const message = `web-server-${server_number}`;
+    res.status(200).json({
+      host: message
+    });
+    console.log('HEALTH CHECK PASSED');
+  } catch (err) {
+    console.error('ERROR FETCHING GOALS');
+    console.error(err.message);
+    res.status(500).json({ message: 'HEALTH CHECK FAILED' });
+  }
+});
+
 app.listen(80);

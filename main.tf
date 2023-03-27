@@ -59,6 +59,7 @@ resource "null_resource" "local_exec" {
   triggers = {
 		load_balancer = docker_container.load_balancer.id
     web_servers = join(",", docker_container.web.*.id)
+    conf_file = local_file.nginx_conf.id
 	}
 }
 
