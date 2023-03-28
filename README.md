@@ -38,17 +38,20 @@ Create the following cluster:
 
 
 5. Write a shell script for install(using git pull from github)/start/stop/status of the cluster
+    
     Solution:
         Script: webserverdf.sh [action]
         Available actions: Available actions: install, start, stop, status
 
 6. Write a README file
+    
     Solution:
         README.md
 
  
 
 BONUS: Instantiate a second cluster (or more – based on configuration )of web-servers and load-balancer with minimum added lines (add support in your script)
+    
     DF: not implemented yet. hopefully will do that later)
 
 General notes:
