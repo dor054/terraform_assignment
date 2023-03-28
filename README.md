@@ -57,8 +57,11 @@ BONUS: Instantiate a second cluster (or more – based on configuration )of web-
 General notes:
 This script should run on linux machine with terraform and docker installed where docker commands are not require sudo
 Private resources used: 
+
 https://github.com/dor054/terraform_assignment
+
 https://hub.docker.com/repository/docker/fmf054/web_server_node/general
+
 
 Regards,
 Dor Feldman
